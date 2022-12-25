@@ -1,0 +1,14 @@
+body {
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 300;
+    background: #1a1111;
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    color: #707070;
+    padding: 25px 0 13px
+}

@@ -1,0 +1,113 @@
+.topheader {
+    z-index: 99999; /*CSS-свойство z-index определяет положение позиционированного элемента и его дочерних элементов или флекс-элементов по оси z. 
+    Перекрывающие элементы с большим значением z-index будут накладываться поверх элементов с меньшим z-index. */
+    position: fixed; /*Элемент выбивается из обычного потока документа, и для элемента в макете страницы не создаётся пространство.
+     Он позиционируется относительно исходного содержащего блока,*/
+    width: 100%;
+    background: white;
+    height: 140px;
+}
+body {
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 300;
+    background: #1a1111;
+}
+.logo {
+    display: block;
+    position: absolute;
+    bottom: auto; /*располагается так же, как при статическом позиционировании.*/
+}
+.logo>a>img {
+    margin-top: -10px;
+    padding-right: 10px;
+    height: 60px;
+}
+.logo>a{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    color: #696969;
+    text-transform: uppercase;
+    font-size: 20px; /* стилизуют заголовки с помощью прописных букв.*/
+    line-height: initial; /* устанавливает величину пространства между строками, например в тексте.
+     В блочных элементах оно указывает минимальную высоту блоков строк внутри элемента.*/
+}
+.primary-nav-trigger .menu-icon{
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    width: 39px;
+    height: 2px;
+    background-color: black;
+}
+.primary-nav-trigger .menu-icon::before, .primary-nav-trigger .menu-icon::after{
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 9px;
+    width: 39px;
+    height: 2px;
+    background-color: black;
+    border: 0px;
+}
+.primary-nav-trigger .menu-icon::before{
+    top: 18px;
+}
+.banner{
+    background: url(images/slider.jpg) #696969;
+    background-blend-mode: multiply,normal;
+    display: flex;
+    color: #d6d5d5;
+    align-items: center;
+    min-height: 650px;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+}
+li{
+    list-style-type: none;
+}
+.banner h2 {
+    font-size: 3rem;
+}
+.banner p {
+    font-size: 2rem;
+}
+.scrolldown {
+    position: absolute;
+    left: calc(50% - 52px);
+    margin-top: 15%;
+}
+.scrolldown img {
+    margin-bottom: 20px;
+}
+.scrolldown p{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+.head_white_content p {
+    color: white;
+    padding: 20px 90px 0px;
+}
+h3 {
+    font-size: 38px;
+    text-transform: uppercase;
+    color: white;
+    line-height: initial;
+}
+.head_white_content span {
+    background-color: orange;
+    display: inline-block;
+    width: 200px;
+    height: 3px;
+}
+.head_white_content {
+    text-align: center;
+    padding: 5%;
+    width: 100%;
+}
